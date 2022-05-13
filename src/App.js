@@ -16,7 +16,7 @@ function App() {
         <Route path='/signup'  />
         {/*Rutas Privadas*/}
         <Route element={<ProtectedPages/>}>
-          <Route path='/' />
+          <Route path='/' element={'/login'}   />
           <Route path='/shop' element={<Shop/>} />
           <Route path='/shop/:id'  element={<Product/>}/>
           <Route path='/cart' element={<Cart/>}/>
