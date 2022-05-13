@@ -1,38 +1,192 @@
 .App {
   text-align: center;
+  font-family:ABee ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family:ABee ;
+  src: url(/src/font/ABeeZee-Regular.ttf) format('truetype');
+  font-style: normal;
+  
+} 
+
+a{
+ text-decoration: none;
+color: #282c34;
+}
+button{
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+  width: 150px;
+  font-family:Abee ;
+  color: #282c34;
+  cursor: pointer;
+  background-color: lightgray;
+  box-shadow: rgb(194, 205, 214) 3px 3px 6px 0px inset, rgba(167, 165, 165, 0.633) -3px -3px 6px 1px inset;
+}
+button:hover{
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+  width: 150px;
+  font-family:Abee ;
+  color: #282c34;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(194, 205, 214) 3px 3px 6px 0px inset, rgba(167, 165, 165, 0.633) -3px -3px 6px 1px inset;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-login{
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  font-family: ABee;
+  text-align: center;
+  width: 200px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ========================Login============================================ */
+.box-login{
+  
+  width: 100%;
+  height: 100vh;
+  background-image: url(/src/img/bg1.jpg);
+  background-size:contain;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color:aliceblue; 
 }
 
-.App-link {
-  color: #61dafb;
+.login-data{
+  display: flex;
+  flex-direction: column;
+    width: 300px;
+  align-items: center;
+  height: 30vh;
+  justify-content: space-around;
+  font-size: larger;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+  width: 150px;
+  font-family:Abee ;
+  color: #282c34;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.button:hover{
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+  width: 150px;
+  font-family:Abee ;
+  color: #282c34;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: rgb(194, 205, 214) 3px 3px 6px 0px inset, rgba(167, 165, 165, 0.633) -3px -3px 6px 1px inset;
+}
+
+.header-text{
+  
+  
+  font-size: 70px;
+  font-weight: bold;
+  color: #CFC547;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+
+}
+
+.normal-text{
+  letter-spacing: 4px;
+  text-shadow: 3px 0px 7px rgba(162, 159, 147, 0.8), -3px 0px 7px rgba(113, 113, 111, 0.8), 0px 4px 7px rgba(191, 189, 184, 0.8);
+}
+
+/* ========================Box Shop==================================== */
+
+.box-shop{
+  
+  width: 100%;
+  height: auto;
+  background-image: url(/src/img/bg2.jpg);
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:aliceblue; 
+}
+
+/* ==============================Box Cart */
+
+.box-cart{
+  
+  width: 100%;
+  min-height: 100vh;
+   background-image: url(/src/img/bg2.jpg);
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#282c34;
+  font-family: ABBe; 
+}
+
+
+
+/* ==========================Product=================================== */
+
+.related{
+  cursor: pointer;
+}
+
+.box-product{
+  
+  width: 100%;
+  height: auto;
+  background-image: url(/src/img/bg2.jpg);
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#282c34;
+  font-family: ABBe; 
+}
+
+h6{
+  color:#ffffff;
+  background-color: #606265;
+  height: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+
+/* ============Box Succes====================================== */
+
+.box-succes{
+  
+  width: 100%;
+  height: 100vh;
+  background-image: url(/src/img/bg1.jpg);
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#282c34;
+  font-family: ABBe; 
 }
