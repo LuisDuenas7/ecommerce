@@ -44,18 +44,18 @@ const increment=()=>{
 
 // ===========================================================================
     return(
-     <div>
+     <div className="box-cart-product">
         
        <h1>{prodObj.product.name}</h1>
             <h3>Cantidad: {prodObj.quantity} </h3>
             <div>
-              <button onClick={decrement}>-</button>
-              <button onClick={increment}>+</button>
+              <button className="button-shop2" onClick={decrement}>-1</button>
+              <button className="button-shop2" onClick={increment}>+1</button>
 
 
             </div>
             <h3>Total: ${prodObj.product.price * prodObj.quantity}</h3>
-            <button onClick={()=> setDeleteId(prodObj.id) }>❌</button>
+            <button  className="button-shop2" onClick={()=> setDeleteId(prodObj.id) }>❌</button>
      </div>
 
     )

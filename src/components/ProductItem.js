@@ -3,11 +3,10 @@ import { Link } from "react-router-dom"
 const ProductItem=({prodObj})=>{
     return(
         <Link to={`/shop/${prodObj.id}`}>
-          <div style={{margin: "20px"}}>
-                <h2>{prodObj.name}</h2>
-
-                <h5>{prodObj.description}</h5>
-                <img width='140px'   src={prodObj.images[0].url} alt='loading...'/>
+          <div className="box-item-product">
+                <h2 className="name-product">{prodObj.name}</h2>
+                <h5 className="description-product">{prodObj.description}</h5>
+                <img className="img-product" src={prodObj.images[0].url} alt='loading...'/>
                 
             </div>
           
