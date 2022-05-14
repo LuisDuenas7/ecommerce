@@ -585,7 +585,7 @@ display: flex;
 .box-cart3{
   
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   background-image: url(/src/img/bg2.jpg);
   background-size:contain;
   display: flex;
