@@ -678,6 +678,9 @@ display: flex;
   color:white;
   font-size: 80px;
   cursor: pointer;
+   background-color: #282c34;
+  border-radius: 50%;
+  padding: 10px;
  
 }
 
